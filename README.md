@@ -29,6 +29,9 @@
 
     ```bash
     sudo apt install libmemcached-dev
+    sudo apt-get install libsqlite3-mod-spatialite
+    sudo apt install openjdk-11-jre-headless
+    sudo apt install gunicorn
     ```
 2.	Install GDAL
 
@@ -213,7 +216,7 @@ The installation instructions are based on the [official GeoNode documentation](
 
 ```bash
 # Run the server in DEBUG mode
-./paver_dev.sh start
+./paver_dev.sh start -b localhost:8000
 ```
 
 GeoNode is available at: http://localhost:8000/
